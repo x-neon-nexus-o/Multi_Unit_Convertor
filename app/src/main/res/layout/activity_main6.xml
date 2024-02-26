@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#009688"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="71dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="55dp"
+        android:width="200dp"
+        android:height="30dp"
+        android:background="#8BC34A"
+        android:gravity="center"
+        android:text="Convertor"
+        android:textColor="#FDFBFB"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        tools:ignore="TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/temp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="   Enter Value :"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:layout_margin="10dp"/>
+
+    <RadioGroup
+        android:id="@+id/rg1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <RadioButton
+        android:id="@+id/rb1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#FFEB3B"
+        android:minHeight="48dp"
+        android:textStyle="bold"
+        android:text="Celsius (C)" />
+
+    <RadioButton
+        android:id="@+id/rb2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#FFEA00"
+        android:minHeight="48dp"
+        android:textStyle="bold"
+        android:text="Fahrenheit (F)" />
+
+    <RadioButton
+        android:id="@+id/rb3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#FFEA00"
+        android:minHeight="48dp"
+        android:textStyle="bold"
+        android:text="Kelvin (K)" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tempres"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:hint="CONVERTED VALUES WILL BE DISPLAYED HERE "
+        android:textAlignment="gravity"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:background="#fff"/>
+</LinearLayout>
